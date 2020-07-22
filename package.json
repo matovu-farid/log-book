@@ -1,0 +1,25 @@
+{
+  "name": "log-book",
+  "version": "1.0.0",
+  "description": "web app for logging a worker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matovu-farid/log-book.git"
+  },
+  "keywords": [
+    "logging"
+  ],
+  "author": "Matovu Farid Nkoba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matovu-farid/log-book/issues"
+  },
+  "homepage": "https://github.com/matovu-farid/log-book#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
