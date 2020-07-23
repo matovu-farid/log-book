@@ -2,6 +2,7 @@ body{
     font-size: 30px;
     background-color:#404442;
     font-family: 'Inconsolata', monospace;
+    color: rgb(245, 241, 241);
 }
 .center{
    width: 500px;
@@ -10,9 +11,35 @@ body{
 
 header{
     width: 500px;
+    height: 5%;
     margin: auto;
-    
     font-style: italic;
+}
+td {
+  border-bottom: 1px solid white;
+  padding: 15px;
+}
+th{
+  
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+tr{
+  background-color: rgb(125, 132, 197); 
+}
+tr:hover{
+  background-color: rgb(80, 91, 195);
+}
+table{
+ margin: auto;
+ width:70%; 
+ margin-left:15%; 
+ margin-right:15%;
+  color: white;
+  border-radius: 10px;  
+  border-spacing: 5px;
+  border-collapse: collapse;
+  
 }
 h1{
     font-size: 50px;
@@ -77,3 +104,10 @@ input[type=submit]:focus{
     margin: 0mm;
     transition: background-color 3s cubic-bezier(0.23, 1, 0.320, 1);
 }
+.table{
+  overflow-x:auto;
+  height: 90%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
