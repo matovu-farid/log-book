@@ -9,9 +9,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet"> 
 </head>
 <body id="submitBody">
+    <%- include('./partials/nav.ejs') %> 
     <header>
         <h1>Log Table</h1>
     </header>
+    
+
+    <div class="divButton">
+        <a href="/delete" id="delete">Clear LogBook</a>
+   
+    </div >
+    
+    <script >
+        const objectGot= require('../index.js');
+        const deleteCollection = require('./delete'); 
+        document.getElementById("clear").onclick= deleteCollection(objectGot.db, objectGot.collectionPath, 5);
+
+    </script>
+  
     
     <div class="table">
         <table>
@@ -35,5 +50,13 @@
       
    
 </div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.17.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
 </body>
 </html>

@@ -1,12 +1,17 @@
 body{
+ 
+  background: url("/public/images/lake.jpg" ) ;
+  background-repeat: no-repeat;
+  background-size: cover;
     font-size: 30px;
     background-color:#404442;
     font-family: 'Inconsolata', monospace;
-    color: rgb(245, 241, 241);
+    color: rgb(154, 179, 154);
 }
 .center{
    width: 500px;
     margin: auto;
+    
 }
 
 header{
@@ -14,7 +19,9 @@ header{
     height: 5%;
     margin: auto;
     font-style: italic;
+    
 }
+
 td {
   border-bottom: 1px solid white;
   padding: 15px;
@@ -23,10 +30,12 @@ th{
   
   text-align: center;
   border-bottom: 1px solid white;
+  background-color: rgb(10, 233, 59); 
 }
 tr{
   background-color: rgb(125, 132, 197); 
 }
+tr:nth-child(even){background-color: #1b2f53;}
 tr:hover{
   background-color: rgb(80, 91, 195);
 }
@@ -43,7 +52,7 @@ table{
 }
 h1{
     font-size: 50px;
-    color: rgb(245, 241, 241);
+    color: rgb(223, 188, 32);
 }
 label{
     color: rgb(245, 241, 241);
@@ -67,20 +76,31 @@ input[type=text] {
     transition: width 3s,background-color 2s ease-in-out;
     
   }
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
   input[type=text]:hover {
     font-size: 20px;
   height: 35px;
   width: 100%px;
   border-radius: 20px;
+  background-color: rgb(178, 241, 220);
   
   border-color: rgb(97, 238, 15);
-  transition: border-color 2s,width 3s, ease-in-out;
+  transition: border-color 2s, background-color 1s,width 3s, ease-in-out;
   
 }
   input[type=submit]{
       font-size: 30px;
       color: rgb(245, 241, 241);
-      background-color: teal;
+      background-color: rgb(238, 10, 227);
       border-radius: 10px;
       width: 25%;
       padding: 0mm;
@@ -109,5 +129,24 @@ input[type=submit]:focus{
   height: 90%;
   margin-top: auto;
   margin-bottom: auto;
+}
+.divButton{
+  width: 200px;
+  height: 30px;
+  background-color: darkmagenta;
+  color: aliceblue;
+  
+
+}
+#delete{
+  
+  color: aliceblue;
+  text-decoration-line: none;
+  font-size: 20px;
+ 
+  padding: 5px;
+  text-align: center;
+  
+  
 }
 

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Book</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet"> 
+   
+</head>
+<body >
+    <%- include('./partials/nav.ejs') %> 
+   
+    <header>
+        <h1>Log Book</h1>
+    </header>
+    <div class="center">
+        
+        <form id="logform" action="/submitted" target="_blank"  method="POST">
+            <label for="id">ID</label><br>
+            <input type="text"  name="id" ><br>
+            <label for="name">Name</label><br>
+            <input type="text"  name="name" ><br><br>
+            <label for="location">Location</label><br>
+            <input type="text"  name="location" ><br><br>
+            <label for="comment">Comment</label><br>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            <input type="submit" value="Submit" ><br><br>
+            
+          </form> 
+          
+    </div>
+  
+    <div>
+       
+        <label for="grade">Grade Me:</label>
+        <input type="number"  id="grade" name="grade"min="50" max="100" value="100" >
+        
+        
+
+    </div>
+
+   
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.17.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+
+
+
+ 
+</body>
+</html>
