@@ -20,8 +20,8 @@
   },
   "homepage": "https://github.com/matovu-farid/log-book#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
     "firebase-admin": "^9.0.0"
   }
 }
