@@ -21,7 +21,7 @@
   "homepage": "https://github.com/matovu-farid/log-book#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "firebase-admin": "^9.0.0"
   }
 }
